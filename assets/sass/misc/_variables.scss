@@ -1,0 +1,17 @@
+/* Variables*/
+
+$principal: #004680;
+$secondary: #1D333C;
+
+$spacings:(
+    large: 24px,
+    medium: 16px,
+    small: 8px
+);
+@each $var, $val in $spacings {
+    .sp-#{$var} {
+        padding: #{$val}
+    }
+}
+
+

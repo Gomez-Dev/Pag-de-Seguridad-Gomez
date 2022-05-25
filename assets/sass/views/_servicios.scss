@@ -1,0 +1,134 @@
+/* Cominezo del main servicios */
+
+.mains {
+    grid-column: 2/4;
+    grid-row: 2/4;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,auto);
+    .sections {
+        display: flex;
+        grid-column: 1/3;
+        grid-row: 1/2;
+        margin: 10px 20px 10px 20px;
+        padding: map-get($spacings, small);
+        justify-content: center;
+        text-align: start;
+        align-items: center;
+        .monitoreo { 
+            font-size: 18px;
+            margin: 50px 50px 50px 50px;
+            width: 400px;
+            text-align: justify;
+        }
+        .pictures {
+            width: 500px;
+            margin: 30px 30px 30px 30px;
+        }
+    } 
+    .sections1 {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        text-align: start;
+        grid-column: 1/3;
+        grid-row: 2/3;
+        align-content: center;
+        margin: 10px 20px 10px 20px;
+        padding: map-get($spacings, small);
+        .instalacion { 
+            font-size: 18px;
+            margin: 50px 50px 50px 50px;
+            text-align: justify;
+        }
+        .pictures1 img {
+            width: 500px;
+            height: 300px;
+        }
+    } 
+}
+@media screen and (max-width: 992px) {
+    .mains {
+        grid-column: 1/3;
+        grid-row: 2/4;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 465px 465px;
+        .sections { 
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            .monitoreo {
+                font-size: 18px;
+                margin: 5px 25px 5px 10px;
+                width: 360px;
+            }
+            .pictures {
+                width: 50%;
+                margin: 5px 5px 5px 5px;
+            }
+        }
+        .sections1 {
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            .instalacion {
+                font-size: 18px;
+                margin: 5px 25px 5px 10px;
+                width: 465px;
+            }
+            .pictures1 .img {
+                width: 100%;
+                margin: 5px 5px 5px 5px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+
+    .mains {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,auto);
+        .sections { 
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            .monitoreo {
+                font-size: 18px;
+                margin: 5px 10px 5px 10px;
+                width: auto;
+                height: 200px;
+            }
+            .pictures {
+                width: auto;
+                margin: 5px 5px 5px 5px;
+            }
+        }
+        .sections1 {
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            max-width: 100%;
+            .instalacion {
+                font-size: 18px;
+                margin: 5px 10px 5px 10px;
+                width: auto;
+                height: 350px;
+            }
+            .pictures1 .img {
+                width: 100%;
+                margin: 5px 5px 5px 5px;
+            }
+        }
+    }
+}

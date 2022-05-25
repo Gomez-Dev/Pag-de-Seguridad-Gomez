@@ -1,0 +1,66 @@
+/* Globals */
+
+html {
+   font-size: 62.5%;
+   font-family: $principal;
+   color: $secondary;
+}
+
+
+
+
+body {
+   height: 100%;
+   display: grid;
+   grid-gap: 5px;
+   max-width: 1440px; 
+   grid-template-columns: auto 540px 540px auto;
+   grid-template-rows: 150px 350px 580px 150px;
+   color: $secondary;    
+   font-family: inherit;
+   background-color: #f2f2f2;
+}
+
+a {
+   text-decoration: none;
+}
+img {
+   width: 100%;
+}
+
+
+/* Formato Texto*/
+
+html{
+   font-family: 'Roboto Serif', sans-serif;
+}
+
+/* Helpers */
+
+.flex-row { 
+   display: flex;
+}
+
+.flex-column {
+   display: flex;
+   flex-direction: column;
+}
+
+.container {
+   max-width: 1080px;
+   margin: 0 auto;
+}
+// full responsive
+@media screen and (max-width: 992px) {
+   body {
+      height: 100%;
+      display: grid;
+      grid-gap: 0px;
+      max-width: 1440px; 
+      grid-template-columns: 405px 405px;
+      grid-template-rows: auto 350px 580px auto;
+      color: $secondary;    
+      font-family: inherit;
+   }
+
+}
